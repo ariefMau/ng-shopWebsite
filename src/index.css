@@ -16,6 +16,10 @@ body {
   background-color: mediumseagreen;
 }
 
+.category.aktif{
+  background-color: mediumseagreen;
+  color: white;
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;

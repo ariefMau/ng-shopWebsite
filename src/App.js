@@ -13,43 +13,58 @@ export default class App extends Component {
 
     this.state = {
       menus: [],
+      categoriYangDipilih: "Makanan",
     };
   }
 
   componentDidMount() {
     axios
-    .get(API_URL + "products")
-    .then((res) => {
-      console.log("Response : ", res);
-      const menus = res.data;
-      this.setState({ menus });
-    })
-    .catch(error => {
-      console.log(error);
-    })
+      .get(API_URL + "products?category.nama=" + this.state.categoriYangDipilih)
+      .then((res) => {
+        console.log("Response : ", res);
+        const menus = res.data;
+        this.setState({ menus });
+      })
+      .catch((error) => {
+        console.log(error);
+      });
   }
 
+  changeCategory = (value) => {
+    this.setState({
+      categoriYangDipilih: value,
+      menus: [],
+    });
+
+    axios
+      .get(API_URL + "products?category.nama="+value)
+      .then((res) => {
+        console.log("Response : ", res);
+        const menus = res.data;
+        this.setState({ menus });
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  };
+
   render() {
-    const {menus} = this.state
+    const { menus, categoriYangDipilih } = this.state;
     return (
       <div className="App">
         <NavbarComponent />
         <div className="mt-5">
           <Container fluid>
             <Row>
-              <ListCategories />
+              <ListCategories changeCategory={this.changeCategory} categoriYangDipilih={categoriYangDipilih} />
               <Col>
-                <h5><b>Daftar Produk</b></h5>
+                <h5>
+                  <b>Daftar Produk</b>
+                </h5>
                 <hr />
                 <Row>
-                  {
-                    menus && menus.map((menu) => (
-                      <Menus
-                        key={menu.id}
-                        menu={menu}   
-                      />
-                    ))
-                  }
+                  {menus &&
+                    menus.map((menu) => <Menus key={menu.id} menu={menu} />)}
                 </Row>
               </Col>
               <Hasil />
