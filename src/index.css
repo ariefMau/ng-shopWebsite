@@ -16,7 +16,7 @@ body {
   background-color: mediumseagreen;
 }
 
-.category.aktif{
+.category-aktif{
   background-color: mediumseagreen;
   color: white;
 }

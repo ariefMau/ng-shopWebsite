@@ -11,11 +11,11 @@ import {
 
 const Icon = ({ nama }) => {
   if (nama === "Makanan")
-    return <FontAwesomeIcon icon={faUtensils} className="mr-2" />;
+    return <FontAwesomeIcon icon={faUtensils} className="mr-1" />;
   if (nama === "Minuman")
     return <FontAwesomeIcon icon={faWineGlassAlt} className="mr-2" />;
   if (nama === "Cemilan")
-    return <FontAwesomeIcon icon={faCookieBite} className="mr-2" />;
+    return <FontAwesomeIcon icon={faCookieBite}  />;
     
   return <FontAwesomeIcon icon={faUtensils} className="mr-2" />;
 };
@@ -57,11 +57,11 @@ export default class ListCategories extends Component {
               <ListGroup.Item
                 key={category.id}
                 onClick={() => changeCategory(category.nama)}
-                className={categoriYangDipilih === category.nama && "category.aktif"}
+                className={categoriYangDipilih === category.nama && "category-aktif"}
                 style={{cursor: 'pointer'}}
               >
                 <h5>
-                  <Icon nama={category.nama} /> {categories.nama}
+                  <Icon nama={category.nama} /> {category.nama}
                 </h5>
               </ListGroup.Item>
             ))}
