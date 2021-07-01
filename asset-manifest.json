@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/project-Individu/static/css/main.cc0ece54.chunk.css",
-    "main.js": "/project-Individu/static/js/main.0fed4c4c.chunk.js",
-    "main.js.map": "/project-Individu/static/js/main.0fed4c4c.chunk.js.map",
+    "main.css": "/project-Individu/static/css/main.228136f0.chunk.css",
+    "main.js": "/project-Individu/static/js/main.8171c3ea.chunk.js",
+    "main.js.map": "/project-Individu/static/js/main.8171c3ea.chunk.js.map",
     "runtime-main.js": "/project-Individu/static/js/runtime-main.c11b51bb.js",
     "runtime-main.js.map": "/project-Individu/static/js/runtime-main.c11b51bb.js.map",
     "static/css/2.4c97ca4f.chunk.css": "/project-Individu/static/css/2.4c97ca4f.chunk.css",
@@ -12,14 +12,14 @@
     "static/js/3.0b700864.chunk.js.map": "/project-Individu/static/js/3.0b700864.chunk.js.map",
     "index.html": "/project-Individu/index.html",
     "static/css/2.4c97ca4f.chunk.css.map": "/project-Individu/static/css/2.4c97ca4f.chunk.css.map",
-    "static/css/main.cc0ece54.chunk.css.map": "/project-Individu/static/css/main.cc0ece54.chunk.css.map",
+    "static/css/main.228136f0.chunk.css.map": "/project-Individu/static/css/main.228136f0.chunk.css.map",
     "static/js/2.a32e982c.chunk.js.LICENSE.txt": "/project-Individu/static/js/2.a32e982c.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.c11b51bb.js",
     "static/css/2.4c97ca4f.chunk.css",
     "static/js/2.a32e982c.chunk.js",
-    "static/css/main.cc0ece54.chunk.css",
-    "static/js/main.0fed4c4c.chunk.js"
+    "static/css/main.228136f0.chunk.css",
+    "static/js/main.8171c3ea.chunk.js"
   ]
 }
